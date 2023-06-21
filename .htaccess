@@ -1,0 +1,30 @@
+RewriteEngine on
+
+AddDefaultCharset windows-1251
+
+
+php_value default_charset "cp1251"
+php_value max_execution_time 0
+
+php_flag display_startup_errors off
+#php_flag display_errors off
+php_flag html_errors off
+php_flag  log_errors on
+#php_value error_log  /home/crmu660633/test.upak.me/logs/PHP_errors.log
+
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+
+	AuthType Basic
+	AuthName "������� ����� � ������"
+	AuthUserFile /home/crmu660633/test.upak.me/docs/.htpasswd
+	require valid-user
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+
+RewriteEngine On
