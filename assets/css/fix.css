@@ -1,0 +1,74 @@
+body {
+	height: 100%;
+}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+.clear {}
+.clear:before,
+.clear:after {
+	content: '';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+
+#fixContainer {
+	font-size: 12px;
+	width: 1200px;
+	margin: 20px auto 0;
+}
+
+#getNextClient {
+	cursor: pointer;
+}
+
+#currentUid {
+	width: 50px;
+	text-align: center;
+	margin: 0 20px 0 0;
+}
+
+#resultContainer {
+	margin: 20px 0 0 0;
+	display: none;
+}
+
+#resultContainer .row {
+	
+}
+
+#resultContainer .row .row_label {
+	float: left;
+	width: 200px;
+	text-align: right;
+	padding: 5px;
+	font-weight: 700;
+}
+
+#resultContainer .row .row_content {
+	float: left;
+	width: calc(100% - 220px);
+	text-align: left;
+	padding: 5px;
+}
+
+#workingArea {
+	margin: 20px 0 0 0;
+}
+
+#workingArea input.new_phone {
+	width: 300px;
+}
+
+.workingArea_row {
+	margin: 0 0 20px;
+}
+
+#workingArea .error {
+	margin: 10px 0 0 0;
+	font-weight: 400;
+}

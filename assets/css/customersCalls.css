@@ -1,0 +1,24 @@
+#moduleSubmenu {
+	width: 1100px;
+	margin: 5px auto 15px;
+}
+.moduleSubmenu_item {
+	float: left;
+}
+.moduleSubmenu_item a:link, .moduleSubmenu_item a:visited {
+	display: block;
+	padding: 5px 10px;
+	font-size: 13px;
+	text-decoration: none;
+}
+.moduleSubmenu_item a:hover, .moduleSubmenu_item a:active {
+	background-color: #eee;
+}
+.moduleSubmenu_item.active a {
+	background-color: #eee;
+}
+
+.moduleSubmenu_item i {
+	font-size: 14px;
+	margin: 0 5px 0 0;
+}

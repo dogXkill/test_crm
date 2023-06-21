@@ -1,0 +1,85 @@
+body {
+	height: 100%;
+}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+.clear {}
+.clear:before,
+.clear:after {
+	content: '';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+
+#fixContainer {
+	font-size: 12px;
+	width: 1900px;
+	margin: 20px auto 0;
+}
+
+.item {
+	margin: 0 0 5px;
+}
+
+.item:nth-child(even) {
+	background-color: #fff;
+}
+.item:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+
+.item .count {
+	width: 50px;
+	margin: 0 10px 0 0;
+}
+
+
+
+
+#listPage {}
+
+.listItemHeader {
+	background-color: #eee;
+}
+
+.listItemHeader > div {
+	float: left;
+	min-height: 2px;
+	text-align: center;
+	font-weight: 700;
+	padding: 5px;
+	border-right: 1px solid #fff;
+}
+
+.listItem:nth-child(even) {
+	background-color: #fff;
+}
+.listItem:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+
+.listItem > div {
+	float: left;
+	min-height: 2px;
+	padding: 5px;
+	border-right: 1px solid #fff;
+}
+
+#listPage  .col_uid  { width: 40px; text-align: center; }
+#listPage  .col_short { width: 100px; }
+#listPage  .col_name { width: 100px; }
+#listPage  .col_legal_address { width: 200px; }
+#listPage  .col_postal_address { width: 200px; }
+#listPage  .col_inn { width: 100px; }
+#listPage  .col_kpp { width: 150px; }
+#listPage  .col_cont_pers { width: 150px; }
+#listPage  .col_rs_acc { width: 150px; }
+#listPage  .col_cont_tel { width: 150px; }
+#listPage  .col_firm_tel { width: 150px; }
+#listPage  .col_email { width: 170px; }
+#listPage  .col_ordersCount { width: 70px; text-align: center; }

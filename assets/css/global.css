@@ -1,0 +1,31 @@
+body {
+	height: 100%;
+	position: relative;
+}
+
+input:focus, button:focus, textarea:focus {
+	outline: none;
+}
+
+input, select, textarea {
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.clear {}
+.clear:before,
+.clear:after {
+	content: '';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}

@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="../i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="../i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="../i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3><center><img src="../i/sotr/if.jpg" alt="" width="600" height="450" border="0">
+</center><br>
+<font face=tahoma>
+<strong>Имя: </strong>Ирина Фервиль	<br>
+<strong>Должность: </strong>неизвестна<br>
+<strong>ДР:</strong> 25 января 1959<br>
+<strong>Электропочта:</strong>   <a href="mailto:ifervil@wanadoo.fr">ifervil@wanadoo.fr</a><br>
+<strong>Работает с:</strong> начала начал<br>
+<strong>Телефоны:</strong> 8 1033 164 09 11 12<br>
+<strong>Что закончил: </strong>МГУ<br>
+<strong>Семейное положение:</strong> замужем, есть ребенок<br>
+<strong>Служебная характеристика:</strong> появляется в офисе раз в три месяца, всем помогает добрым делом и советом.</font>
+<center><a href="16.shtml"><font face=tahoma><strong><<<</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="../"><font face=tahoma><strong>на главную</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="18.shtml"><font face=tahoma><strong>>>></strong></strong></font></a></center>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>

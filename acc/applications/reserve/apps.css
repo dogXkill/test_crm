@@ -1,0 +1,147 @@
+#forma .inputs{
+    left:10px;
+    position: relative;
+    line-height: 37px;
+}
+#forma input[type="text"] {
+  width: 300px;
+  font-size: 18px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: white;
+  border-radius: 8px;
+    padding:3px;
+}
+#forma input:disabled {
+  width: 300px;
+  font-size: 18px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #D1D1D1;
+  border-radius: 8px;
+  padding:3px;
+}
+#forma select {
+  width: 400px;
+  padding: 2px 0px 3px 0px;
+  border: 1px solid #cecece;
+  background: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.span_al {
+font-size:9px;
+color: #CC1100;
+}
+.span_tip {
+font-size:9px;
+color: #33CC66;
+}
+
+input:required {
+border: 1px solid green;
+}
+
+input:invalid {
+border: 1px solid red;
+}
+select:required {
+border: 1px solid green;
+}
+
+select:invalid {
+border: 1px solid red;
+}
+#old_title{
+  font-style: italic;
+}
+.red{
+border: #f00 2px solid;
+}
+#everything{
+display:none;}
+.warning{
+color:red;
+}
+.small_text{
+  font-size:10px;
+}
+
+.apps_tbl  {
+    border: #C0C0C0 solid 1px;
+    border-collapse: collapse;
+}
+
+.apps_tbl tr {
+    height: 35px;
+}
+
+.apps_tbl tr:hover {
+    background-color: white;
+}
+
+.apps_tbl td {
+ text-align: center;
+ padding: 3px;
+}
+.apps_tbl th {
+ text-align: center;
+ padding: 6px;
+}
+
+.workout_green_div{
+  position:absolute;
+  height:25px;
+  background-color:#66CC00;
+  border: solid 1px;
+  border-right-color: transparent;
+  float:left;z-index:0;
+}
+
+.workout_red_div{
+  position:absolute;
+  height:25px;
+  background-color:#FF3300;
+  border: solid 1px;
+  border-right-color: transparent;
+  float:left;z-index:0;
+}
+
+.workout_outer_div{
+position:relative;
+width:100px;
+height:25px;
+z-index:1;
+left:0px;
+top:0px;
+border: solid 1px grey;
+font-size: 9px;
+vertical-align: middle;
+}
+
+.workout_perc_text{
+font-size:10px;
+font-weight:bold;
+}
+
+.workout_td{
+width:100px;
+vertical-align: top;
+}
+
+.dat_ord{
+  font-size:9px;
+}
+
+.sm_text_td{
+  font-size:10px;
+}
+
+.btn_big{
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+}
+
+
+

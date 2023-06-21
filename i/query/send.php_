@@ -1,0 +1,49 @@
+
+
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+test
+<?
+
+if ($manager == "masha") {$email = "masha@printfolio.ru";}
+if ($manager == "alla") {$email = "alla@printfolio.ru";}
+
+                // Высылаем на определенный e-mail, - указанный e-mail
+        $recipient .= "'pavel@printfolio.ru;sv@printfolio.ru;oleg@printfolio.ru;liza@printfolio.ru;ira@printfolio.ru;slava@printfolio.ru'.'$email'";
+  
+        $subject = "$_POST['client'] - заказ";
+    
+
+        $message .= "<br><br><strong>Прошу выставить счет</strong><br><br><strong>От кого:</strong> '".$_POST['manager']."'\n";
+        $message .= "<br>1. <strong>Наименование клиента:</strong> '".$_POST['client']."'\n";
+        $message .= "<br>2. <strong>Реквизиты:</strong> '".$_POST['req']."'\n";
+        $message .= "<br>3. <strong>Предмет счета:</strong> '".$_POST['predmet']."'\n";
+        $message .= "<br>3. <strong>Сумма счета:</strong> '".$_POST['sum']."'\n";
+		$message .= "<br>3. <strong>Наименования подрядчиков / какую часть работы они исполняют / суммы счетов:</strong><br> '".$_POST['supl']."'\n";       
+		$message .= "<br>3. <strong>Общая себестоимость:</strong> '".$_POST['cost']."'\n";
+		$message .= "<br>3. <strong>Примечание:</strong> '".$_POST['adition']."'\n";
+		
+        $headers .= "X-Mailer: PHP\n"; // mailer
+        $headers .= "X-Priority: 1\n"; // Urgent message!
+    
+		$headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
+        
+      
+        if (mail($recipient, $subject, $message, $headers)) {
+            print "<font face=tahoma size=4 color=#273456>Спасибо ! Ваше сообщение успешно отправлено. 
+			Менеджеры Printfolio свяжутся с Вами в ближайшее время. 
+			Если Вы решите позвонить нам до того, как наши менеджеры свяжутся с Вами, обязательно укажите на то, что Вы
+			уже отправили заявку с сайта. Это может существенно ускорить обработку Вашего запроса.</font>";
+        }else {
+            print "<font face=tahoma size=4 color=#273456>Иза сбоя на сервере Ваше сообщение не удалось отправить. Пишите на info@printfolio.ru</font>";
+        }
+        
+        //header("Location: index.htm".$lang);
+   
+?>
+</body>
+</html>

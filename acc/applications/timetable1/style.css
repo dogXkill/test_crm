@@ -1,0 +1,129 @@
+﻿
+  body{
+    font-family: tahoma;
+    font-size:12px;
+  }
+
+.sm_date{
+    font-family: tahoma;
+    font-size:8px;
+}
+
+ .table_title{
+    font-family: tahoma;
+    font-weight:bold;
+    font-size:12px;
+    text-align: center;
+     background-color: #eee;
+  }
+  .name{
+    font-family: tahoma;
+    font-weight:bold;
+    font-size:11px;
+  }
+  .doljnost{
+    font-family: tahoma;
+    font-weight:bold;
+    color: grey;
+    font-size:9px;
+  }
+
+  .hours{
+    font-family: tahoma;
+    font-weight:bold;
+    font-size:10px;
+    text-align: center;
+  }
+  .hour_inp{
+ width: 23px;
+ text-align: center;
+  }
+   .general_inp{
+ width: 60px;
+ text-align: center;
+  }
+  .pay_inp{
+ width: 50px;
+ text-align: center;
+  }
+  .sublink{
+	font-size:15px;
+	color:#0000FF;
+	border-bottom: 1px dashed;
+    cursor:pointer;
+  }
+  .table_itog{
+font-size:15px;
+font-weight:bold;
+text-align: center;
+  }
+
+  .order_span{
+  font-size:9px;
+  color: #666666;
+}
+
+  .pay_sum{
+  cursor:pointer;
+  }
+   .pay_sum_div {
+    position: fixed;
+    width: 180px;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    background-color: white;
+    z-index: 100;
+	text-align: center;
+	border: 2px solid #000;
+	display:none;
+	}
+  .x {
+    font-weight:bold;
+    color:red;
+    cursor:pointer;
+	}
+
+  .pass_form
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    font-size:15px;
+  }
+  .pass_inp
+  {
+  width: 70px;
+  height: 30px;
+  font-size:15px;
+  }
+
+table {
+  overflow: hidden;
+   border-collapse: collapse; width: 100%;
+}
+
+tr:hover {
+  background-color: #ffa;
+}
+
+td, th {
+  position: relative;
+  border: 1px solid #ccc; padding: 5px;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}

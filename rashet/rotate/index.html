@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0048)http://vremenno.net/examples/jquery-ui-rotation/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<meta http-equiv="Content-Language" content="ru">
+
+
+<title>Вращение объектов в jQuery UI</title>
+
+<link rel="stylesheet" type="text/css" href="index_files/jquery.ui.core.css">
+<link rel="stylesheet" type="text/css" href="index_files/jquery.ui.resizable.css">
+
+<style>
+#draggable-zone {
+	border:     3px solid #000;
+
+	height:     500px;
+	margin:     2em auto;
+	overflow:   hidden;
+	width:      600px;}
+
+.ui-wrapper {
+	overflow:   visible !important;}
+
+
+.ui-rotatable-handle {
+	background:    #f5dc58;
+	border:        1px solid #FFF;
+	border-radius: 5px;
+		-moz-border-radius:    5px;
+		-o-border-radius:      5px;
+		-webkit-border-radius: 5px;
+	cursor:        pointer;
+
+	height:        10px;
+	left:          50%;
+	margin:        0 0 0 -5px;
+	position:      absolute;
+	top:           -5px;
+	width:         10px;}
+
+.ui-rotatable-handle.clone {
+	visibility:  hidden;}
+</style>
+
+</head>
+<body style="cursor: auto;">
+
+
+		<div id="draggable-wrapper" style="width: 150px; height: 150px; left: 225px; top: 175px; position: relative;" class="ui-draggable">
+
+				<div class="ui-wrapper" style="overflow: hidden; position: relative; width: 150px; height: 150px; top: auto; left: auto; margin: 0px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); transform: matrix(1, 0, 0, 1, 0, 0);">
+                <img src="index_files/earth.png" width="150" height="150" alt="Планет Земля" id="elem-wrapper" class="ui-resizable" style="margin: 0px; resize: none; position: relative; zoom: 1; display: block; height: 150px; width: 150px;">
+                </div>
+
+	</div>
+
+	<script type="text/javascript" src="index_files/jquery.js"></script>
+	<script type="text/javascript" src="index_files/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="index_files/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="index_files/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="index_files/jquery.ui.draggable.js"></script>
+	<script type="text/javascript" src="index_files/jquery.ui.rotatable.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		    elem = $('#elem-wrapper');
+
+
+		elem.parent().rotatable();
+	});
+	</script>
+
+
+</body></html>

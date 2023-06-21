@@ -1,0 +1,647 @@
+#customersCallsPage {
+	width: 1400px;
+    margin: 20px auto;
+	font-size: 12px;
+}
+
+#filters {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.filter input, .filter select {
+    box-sizing: border-box;
+}
+
+.filter {
+    width: 140px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.filterType_input .textInput {
+    width: 100%;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+.filter#filter_search { width: 140px;}
+
+/*фильтр цифра*/
+.filter#filter_ordersCount {width: 154px;}
+
+.filterType_num {}
+
+.filterType_num .filter_input {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.filterType_num .textInput {
+	display: inline-block;
+    width: calc(100% - 18px);
+    padding: 4px 0 4px 110px;
+    text-align: center;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    top: 3px;
+    left: 8px;
+}
+
+.filterType_num.active .filter_input {
+	color: #090;
+	border-color: #090;
+}
+.filterType_num.active .textInput {
+	color: #090;
+}
+
+/*фильтр-чекбокс*/
+.filterType_checkbox#filter_noCalls { width: 170px; }
+.filterType_checkbox {
+	width: 140px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.filterType_checkbox .filter__button {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.filterType_checkbox.active .filter__button {
+	color: #090;
+    border-color: #090;
+}
+
+.filterType_checkbox .filter__button_ico {
+	position: absolute;
+    cursor: pointer;
+    right: 8px;
+    top: 7px;
+}
+
+/*фильтр периода*/
+.filterType_period { width: 280px; }
+.filterType_period#filter_ordersPeriod { width: 345px; }
+.filterType_period#filter_callsPeriod { width: 345px; }
+.filterType_period .filter_input {
+	font-size: 13px;
+	border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 2px 8px;
+	color: #757575;
+	width: 100%;
+	box-sizing: border-box;
+}
+.filterType_period.active .filter_input {
+	color: #090;
+	border-color: #090;
+}
+.filterType_period .periodRange {
+	display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+	color: #757575;
+    position: relative;
+}
+.filterType_period .periodRange.active {
+	color: #090;
+}
+.filterType_period .periodRange:hover {
+	background-color: #f3f3f3;
+}
+.filterType_period .periodRange input[type=text] {
+	background: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 15px 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #757575;
+	cursor: pointer;
+}
+.filterType_period .periodRange.active input[type=text] {
+	color: #090;
+}
+.filterType_period .periodRange_arrow {
+	font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+/*фильтры селекты*/
+.filterType_select {
+	position: relative;
+}
+.filterType_select .filter__button {
+	font-size: 13px;
+	border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+	color: #757575;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+.filterType_select.active .filter__button {
+	color: #090;
+	border-color: #090;
+}
+.filterType_select .filter__button_arrow {
+	position: absolute;
+	cursor: pointer;
+	right: 8px;
+    top: 7px;
+}
+.filterType_select.active .filter__button_arrow {
+	display: none;
+}
+.filterType_select .filter__button_reset {
+	position: absolute;
+	cursor: pointer;
+	right: 5px;
+    top: 5px;
+	display: none;
+	color: #d97373;
+	height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.filterType_select.active .filter__button_reset {
+	display: block;
+}
+.filterType_select .filter__button_reset:hover {
+	background-color: #f0f0f0;
+	color: #d97373;
+}
+
+.filterType_select .filter__options {
+	display: none;
+	z-index: 92;
+    margin-top: 3px;
+    position: absolute;
+    box-shadow: 0px 1px 2px #aaa;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 0;
+    color: #757575;
+    font-size: 13px;
+	overflow-x: hidden;
+	max-height: 220px;
+	overflow-y: auto;
+}
+.filterType_select.opened .filter__options {
+	display: block;
+}
+.filterType_select .filter__option {
+	white-space: nowrap;
+	display: none;
+	min-width: 118px;
+    padding: 10px;
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+}
+.filterType_select .filter__option.showed {display: block;}
+.filterType_select .filter__option:hover {
+	background-color: #f3f3f3;
+}
+.filterType_select .filter__option.active {
+	color: #090;
+    background-color: #f0f0f0;
+    font-weight: 700;
+}
+.filterType_select .filter__switchGroup {
+	padding: 5px 10px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.filterType_select .filter__switchGroup i {
+	margin: 0 10px 0 0;
+}
+.filterType_select .filter__switchGroup:hover {
+	background-color: #f3f3f3;
+}
+
+#resetFiltersButton {
+	float: right;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 6px 8px;
+    color: #757575;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    margin: 2px 0;
+}
+
+
+/* аякс и все что с ним связано */
+#listBox {
+	position: relative;
+}
+
+#listBox > .loader {
+	width: 150px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+.loader-bar {
+	display: inline-block;
+    width: 4px;
+    height: 20px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+    background-color: #090;
+    margin: 20px 2px 0;
+}
+
+.loader-bar:nth-child(1) { animation-delay: 0; }
+.loader-bar:nth-child(2) { animation-delay: .15s; } 
+.loader-bar:nth-child(3) { animation-delay: .30s; }
+.loader-bar:nth-child(4) { animation-delay: .45s; }
+.loader-bar:nth-child(5) { animation-delay: .60s; }
+
+@keyframes loading {
+	0% { transform: scale(1); }
+	20% { transform: scale(1, 2.5); }
+	40% { transform: scale(1); }
+}
+
+#countingBox {
+	float: left;
+    border-radius: 3px;
+    padding: 7px 0;
+    color: #757575;
+    margin: 2px 0;
+}
+
+#countingBox span {font-weight: 700;}
+
+
+/** Таблица-Список клиентов **/
+#customersList {
+	border-collapse: collapse;
+}
+
+#customersList thead td {
+	font-weight: 700;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 2px solid #eee;
+}
+
+#customersList tbody td {
+	padding: 5px;
+	font-size: 12px;
+	border-bottom: 1px solid #eee;
+}
+
+#customersList tbody tr:hover td,
+#customersList tbody tr.pointed td {
+	background-color: #bdcdff;
+}
+
+#customersList .col-clientShort {width: 180px;}
+#customersList .col-manager {width: 90px;}
+#customersList .col-orders {width: 100px;}
+#customersList .col-lastOrder {width: 130px;}
+#customersList .col-orderType {width: 140px;}
+#customersList .col-lastCall {width: 140px;}
+#customersList .col-actions {width: 42px;}
+
+.showItemsHandle {
+	cursor: pointer;
+}
+
+span.actionViewCalls {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 40px;
+    /* color: #aaa; */
+    cursor: pointer;
+}
+
+/** TOOLTIPS **/
+#customersList tbody .itemsTooltip {
+	display: none;
+}
+
+.ui-tooltip.paketoffTooltip {
+	max-width: none;
+	padding: 0;
+}
+
+.ui-widget-content.paketoffTooltip {
+	border: none;
+}
+
+/** Items tooltips **/
+.paketoffTooltip .itemsTooltip h6 {
+	margin: 0;
+	text-align: center;
+	background: rgb(155, 200, 255);
+    padding: 3px;
+}
+
+.paketoffTooltip .itemsTooltip div.list {
+	padding: 5px;
+}
+
+.paketoffTooltip .itemsTooltip div.list > div {
+	font-size: 11px;
+    color: #999;
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+/** Пагинация **/
+.topPagination { margin: 0 0 10px; }
+.topPagination .paginationLinks {
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 2px 0;
+}
+.bottomPagination .paginationLinks {
+	width: 1100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.paginationLinks > a:link, .paginationLinks > a:visited {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+	border-radius: 3px;
+	color: #757575;
+}
+.paginationLinks > a:hover, .paginationLinks > a:active {
+	border: 1px solid #090;
+	color: #090;
+}
+
+.paginationLinks > span.separator {
+	display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.paginationLinks > span.current {
+	display: inline-block;
+	border: 1px solid #090;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+	border-radius: 3px;
+	color: #090;
+}
+
+/** DIALOGS **/
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.ui-widget-overlay {
+	opacity: 0.3;
+}
+
+.paketoffDialog {
+	position: relative;
+}
+
+.dialogLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 250, 250, 0.8);
+    /* display: none; */
+    z-index: 10;
+}
+
+.dialogLoader div {
+	border: 4px solid #e0dbdb;
+    border-top: 4px solid #5078a0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.6s linear infinite;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 11;
+}
+
+#editCallsDialog .dialogContent {
+	display: none;
+}
+
+#editCallsDialog {
+	display: none;
+}
+
+/*внутринности окна*/
+#customerCallsBox {
+	font-size: 12px;
+	width: 700px;
+}
+
+.customerInfo {margin: 0 0 30px;}
+.customerInfo_item {margin: 0 0 5px;}
+.customerInfo_item:last-child {margin: 0;}
+.customerInfo_item:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+.customerInfo_label {
+	width: 170px;
+	font-weight: 700;
+	float: left;
+	padding: 5px;
+}
+
+.customerInfo_value {
+	width: calc(100% - 190px);
+	float: left;
+	padding: 5px
+}
+
+.addCallBox {margin: 0 0 30px;}
+.addCallBoxInfo {
+	margin: 0 0 10px;
+	font-size: 11px;
+}
+
+.addCallBoxInfo span {
+	cursor: pointer;
+    border-bottom: 1px dashed #333;
+    margin: 0 5px 0 0;
+}
+.addCallBoxInfo span:hover {border-bottom: none;}
+
+.addCallForm_errors {
+	margin: 0 0 10px;
+	padding: 5px;
+	font-size: 12px;
+    color: #d97373;
+}
+
+.addCallForm {}
+.addCallForm_field {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.addCallForm_field#addCallForm_field__date {width: 125px;}
+.addCallForm_field#addCallForm_field__result {width: 185px;}
+.addCallForm_field#addCallForm_field__customResult {width: 370px; margin: 0 0 10px; display: none;}
+.addCallForm_field#addCallForm_field__customResult.showed {display: block;}
+.addCallForm_field#addCallForm_field__comment {width: 100%;}
+
+.addCallForm_label {
+	margin: 0 0 4px;
+	font-weight: 700;
+}
+
+.addCallForm_input input[type=text],
+.addCallForm_input select,
+.addCallForm_input textarea {
+	width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+.addCallForm_input select {
+    padding: 6px 8px;
+	cursor: pointer;
+}
+
+.addCallForm_field.hasError input[type=text],
+.addCallForm_field.hasError select,
+.addCallForm_field.hasError textarea {
+	border: 1px solid #d97373;
+}
+
+.addCallForm_buttons {
+	text-align: right;
+}
+
+#addCallButton {
+	color: #6eb46e;
+	cursor: pointer;
+    padding: 7px 10px;
+    font-weight: 700;
+    border: 1px solid #6eb46e;
+    border-radius: 3px;
+}
+
+#addCallButton i {
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 0 8px 0 0;
+}
+#addCallButton span {
+	vertical-align: middle;
+	font-size: 15px;
+}
+
+.callsList {}
+.callsList td {
+	padding: 5px;
+}
+.callsList thead td {
+	font-size: 12px;
+    font-weight: 700;
+	border-bottom: 2px solid #eee;
+}
+
+.callsList tbody tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+.callsList .no-calls-row td {
+    font-size: 12px;
+    font-weight: 700;
+    color: #d97373;
+	text-align: center;
+}
+
+.callsList .col-date {width: 100px;}
+.callsList .col-manager {width: 100px;}
+.callsList .col-result {width: 145px;}
+.callsList .col-comment {}
+.callsList .col-actions {width: 25px;}
+
+
+.callsList .col-actions i {
+	font-size: 19px;
+    color: #aaa;
+    margin: 0 3px;
+	cursor: pointer;
+}
+
+.callsList .col-actions i.deleteCall:hover,
+.callsList .col-actions i.deleteCall.active {
+    color: #d97373;
+}

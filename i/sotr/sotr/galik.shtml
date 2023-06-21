@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3>
+
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>

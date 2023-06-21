@@ -1,0 +1,266 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+HTML, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.crm_voronka_title{
+font-size:18px;
+font-weight:bold;
+text-align: center;
+}
+
+.crm_voronka_etap{
+width:250px;
+border: 1px solid #CFCFCF;
+padding: 10px;
+vertical-align:top;
+margin: 20 15px 15px 0;
+display: inline-block;
+white-space: normal;
+}
+
+.crm_kartochka_sdelki{
+width:230px;
+border: 1px solid #909090;
+background-color:white;
+font-size:12px;
+margin-top:10px;
+white-space: normal;
+padding: 5px;
+}
+
+.container {
+   margin: 15px 15px 15px 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+
+.empty_stage{
+  min-height:  100px;
+  min-width: 230px;
+}
+
+.end_deal{
+    position:fixed;
+    bottom: 10px;
+    right: 30px;
+    width: 600px;
+    height:80px;
+    display:block;
+    background-color: white;
+
+}
+
+.end_deal_button{
+  position:relative;
+  margin: 20 15px 15px 0;
+  width: 280px;
+  height:80px;
+  white-space: normal;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border: 1px dashed #A0A0A0;
+  font-weight:bold;
+}
+
+.end_deal_reasons{
+    display:none;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    width:50%;
+    height:30%;
+    z-index: 100;
+    text-align: center;
+    background-color: white;
+    vertical-align: middle;
+    border: 1px dashed #A0A0A0;
+
+}
+
+.container_end_deal{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.end_deal_reason{
+  position:relative;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  display:inline-block;
+  border: 1px dashed #A0A0A0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+
+
+.shade{
+  display:none;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color: black;
+  opacity:0.5;
+  z-index:99;
+  width: 100%;
+  height:100%;
+}
+
+.block_gif{
+  cursor:pointer;
+  vertical-align:middle;
+}
+
+
+.crm_link{
+ font-size: 17px;
+ padding: 15px;
+ color: #000080;
+ cursor:pointer;
+ text-decoration: underline;
+
+}
+
+
+.settings_div_class{
+    display:none;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    width:50%;
+    z-index: 100;
+    background-color: white;
+    vertical-align: middle;
+    border: 1px dashed #A0A0A0;
+    padding: 10px;
+ }
+
+.user_settings_td_class {
+   display:none;
+   line-height: 30px;
+   border: 1px dashed #A0A0A0;
+   padding: 5px; 
+}
+.common_email_settings_div_class{
+   display:none;
+   line-height: 30px;
+   border: 1px dashed #A0A0A0;
+   padding: 5px;
+}
+.empty_new_common_email{
+    line-height:30px;
+    border: 2px dashed #A0A0A0;
+    padding: 5px;
+}
+
+
+
+
+.crm_set_list{
+  position:relative;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  display:inline-block;
+  border: 1px dashed #A0A0A0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.new_set_class{
+  width:150px;
+  height:30px;
+  vertical-align: middle;
+}
+
+.new_but_class{
+  width:30px;
+  height:30px;
+  vertical-align: middle;
+}
+
+
+.crm_select{
+  height:30px;
+}
+
+.crm_form_text{
+  height:30px;
+}
+
+
+
+
+#appeals_auto{
+  width:150px;
+  height:30px;
+  vertical-align: middle;
+}
+
+
+
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><br style="clear: both">
+<a name="1"></a><br style="clear: both">
+<a name="2"></a><div style="position: static;" class="crm_voronka_title">.crm_voronka_title</div>
+<br style="clear: both">
+<a name="3"></a><div style="position: static;" class="crm_voronka_etap">.crm_voronka_etap</div>
+<br style="clear: both">
+<a name="4"></a><div style="position: static;" class="crm_kartochka_sdelki">.crm_kartochka_sdelki</div>
+<br style="clear: both">
+<a name="5"></a><div style="position: static;" class="container">.container</div>
+<br style="clear: both">
+<a name="6"></a><div style="position: static;" class="empty_stage">.empty_stage</div>
+<br style="clear: both">
+<a name="7"></a><div style="position: static;" class="end_deal">.end_deal</div>
+<br style="clear: both">
+<a name="8"></a><div style="position: static;" class="end_deal_button">.end_deal_button</div>
+<br style="clear: both">
+<a name="9"></a><div style="position: static;" class="end_deal_reasons">.end_deal_reasons</div>
+<br style="clear: both">
+<a name="10"></a><div style="position: static;" class="container_end_deal">.container_end_deal</div>
+<br style="clear: both">
+<a name="11"></a><div style="position: static;" class="end_deal_reason">.end_deal_reason</div>
+<br style="clear: both">
+<a name="12"></a><div style="position: static;" class="shade">.shade</div>
+<br style="clear: both">
+<a name="13"></a><div style="position: static;" class="block_gif">.block_gif</div>
+<br style="clear: both">
+<a name="14"></a><div style="position: static;" class="crm_link">.crm_link</div>
+<br style="clear: both">
+<a name="15"></a><div style="position: static;" class="settings_div_class">.settings_div_class</div>
+<br style="clear: both">
+<a name="16"></a><div style="position: static;" class="user_settings_td_class">.user_settings_td_class</div>
+<br style="clear: both">
+<a name="17"></a><div style="position: static;" class="common_email_settings_div_class">.common_email_settings_div_class</div>
+<br style="clear: both">
+<a name="18"></a><div style="position: static;" class="empty_new_common_email">.empty_new_common_email</div>
+<br style="clear: both">
+<a name="19"></a><div style="position: static;" class="crm_set_list">.crm_set_list</div>
+<br style="clear: both">
+<a name="20"></a><div style="position: static;" class="new_set_class">.new_set_class</div>
+<br style="clear: both">
+<a name="21"></a><div style="position: static;" class="new_but_class">.new_but_class</div>
+<br style="clear: both">
+<a name="22"></a><div style="position: static;" class="crm_select">.crm_select</div>
+<br style="clear: both">
+<a name="23"></a><div style="position: static;" class="crm_form_text">.crm_form_text</div>
+<br style="clear: both">
+<a name="24"></a><div style="position: static;" id="appeals_auto">#appeals_auto</div>
+<br style="clear: both">
+
+</body></html>

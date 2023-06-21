@@ -1,0 +1,99 @@
+
+
+body {
+	font-family: Tahoma, Verdana, Arial;
+}
+
+select,input,textarea {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 13px;
+}
+
+.stat_tr_title {
+	background-color:#CAD3FF;
+}
+.stat_td_title {
+	white-space:nowrap;
+	text-align:center;
+	padding:3px;
+	border-bottom:3px #0099CC solid;
+	border-right:1px #0099CC solid;
+	font-weight:bold;
+}
+.stat_tr_norm {
+	background-color:#FFFFFF;
+}
+
+.stat_td_norm {
+	border-bottom:1px #0099CC dotted;
+	border-right:1px #0099CC dotted;
+	font-weight:normal;
+	white-space:nowrap;
+}
+.stat_td_n_dolg {
+	border-bottom:1px #0099CC dotted;
+	border-right:1px #0099CC dotted;
+    background-color:#F4F4F4;
+	font-weight:normal;
+	white-space:nowrap;
+}
+.stat_td_n_opl {
+	border-bottom:1px #0099CC dotted;
+	border-right:1px #0099CC dotted;
+  background-color:#EAEAEA;
+	font-weight:normal;
+	white-space:nowrap;
+}
+.stat_td_itog {
+	border-top:2px #0099CC solid;
+	border-bottom:1px #0099CC solid;
+	border-left:1px #0099CC solid;
+	border-right:1px #0099CC solid;
+	background-color:#FFFFCC;
+	font-weight:normal;
+	white-space:nowrap;
+}
+
+.stat_td_edit {
+	border:1px #00FF00 solid;
+	font-weight:normal;
+	white-space:nowrap;
+}
+
+.stat_td_podr {
+	border-bottom:1px #0099CC dotted;
+	border-right:1px #0099CC dotted;
+	font-weight:normal;
+	white-space:nowrap;
+	font-size:9px;
+}
+
+.stat_inp_oplm {
+	border:0;
+	text-align:center;
+	width:60px;
+    height:20px;
+	padding:0;
+	margin:0;
+}
+
+
+
+.stat_fltr_num_sel {
+	width:80px;
+}
+
+.stat_fltr_num_inp {
+	width:80px;
+}
+
+.stat_fltr_client_sel {
+	border:1px #006699 thin;
+	width:250px;
+}
+
+.stat_fltr_data_sel {
+	border:1px #006699 thin;
+	width:70px;
+}
+

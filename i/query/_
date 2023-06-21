@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="../i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="../i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="../i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3><center><form action="send.php" method=post>
+<font face=tahoma><strong>Выставление счета</strong></font></center>
+<table align=center width=500 border=0>
+<tr>
+<td width=250><font face=tahoma>Менеджер проекта</font></td>
+<td><select name=manager>
+<option value="liza">Лиза
+<option value="ira">Ира
+<option value="masha">Маша
+<option value="natasha">Наташа
+<option value="alla">Алла
+<option value="slava">Слава
+<option value="lucy">Люся
+</select></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Название клиента</font></td>
+<td><input type=text size=25 name=client></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Юр. адрес, ИНН, КПП, Р/с, К/с</font></td>
+<td><input type=text size=25 name=req></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Предмет счета</font></td>
+<td><textarea cols="20" rows="3" name="predmet"></textarea></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Сумма счета</font></td>
+<td><input type=text size=25 name=sum></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Наименования подрядчиков / какую часть работы они исполняют / суммы счетов</font></td>
+<td><textarea cols="20" rows="3" name="supl"></textarea></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Общая себестоимость</font></td>
+<td><input type=text size=25 name=cost></td>
+</tr>
+<tr>
+<td width=250><font face=tahoma>Примечание</font></td>
+<td><textarea cols="20" rows="3" name="adition"></textarea></td>
+</tr>
+<tr>
+<td width=250>&nbsp;</td>
+<td><input type=submit value="Отправить !"></td>
+</tr>
+</table><center><br>
+<a href="../"><font face=tahoma><strong>шаблон счета в экселе</strong></font></a>
+<br><br>
+<a href="http://10.0.0.1"><font face=tahoma><strong>на главную</strong></font></a></center>
+</td>
+</form>
+</tr>
+</table>
+
+
+</body>
+</html>

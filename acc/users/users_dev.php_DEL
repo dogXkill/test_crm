@@ -1,0 +1,36 @@
+<?
+
+
+
+
+require_once("../includes/db.inc.php");
+require_once("../includes/auth.php");
+require_once("../includes/lib.php");
+require_once("../includes/im_rez.inc.php");
+
+$q = "SELECT * FROM users";
+$r = mysql_query("$q");
+
+while ($row = mysql_fetch_row($r) )
+{
+
+	$uid = $row[0];
+	$administration = $row[2];
+	$proizv = $row[3];
+	$nadomn = $row[4];
+
+	if ($administration == 1) {
+		$group = 1;
+	} elseif ($proizv == 1) {
+		$group = 2;
+	} elseif ($nadomn == 1) {
+		$group = 3;
+	} else {
+		$group = 0;
+	}
+
+	$new_q = "UPDATE users SET user_group = $group WHERE uid = $uid";
+	$new_r = mysql_query("$new_q");
+}
+
+?>

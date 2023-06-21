@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="../i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="../i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="../i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3><center><img src="../i/sotr/masha.jpg" alt="" width="400" height="600" border="0">
+</center><br>
+<font face=tahoma>
+<strong>Имя: </strong>Демяшова Мария Сергеевна<br>
+<strong>Должность: </strong>менеджер по работе с клиентами Принтфолио<br>
+<strong>ДР:</strong> 02 июня 1984<br>
+<strong>Электропочта:</strong>  <a href="mailto:masha@printfolio.ru">masha@printfolio.ru</a><br>
+<strong>Работает с:</strong> 20 февраля 2006, но знает нас гораздо раньше<br>
+<strong>Телефоны:</strong> 8 916 136 8521, 683 1629<br>
+<strong>Что закончил: </strong>Институт Экономики Сервиса<br>
+<strong>Семейное положение:</strong> холоста, детей нет, внуков нет<br>
+<strong>Служебная характеристика:</strong> вдумчива, нетороплива, скромна, кропотлива, деликатна. Хороший человек :-)</font>
+<center><a href="8.shtml"><font face=tahoma><strong><<<</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="../"><font face=tahoma><strong>на главную</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="19.shtml"><font face=tahoma><strong>>>></strong></strong></font></a></center>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>

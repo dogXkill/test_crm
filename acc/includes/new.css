@@ -1,0 +1,463 @@
+#forma .inputs{
+    left:10px;
+    position: relative;
+    line-height: 37px;
+}
+
+ #forma span{
+    line-height: 34px;
+}
+
+#forma input[type="text"] {
+  width: 300px;
+  font-size: 18px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: white;
+  border-radius: 8px;
+    padding:3px;
+}
+#forma input:disabled {
+  width: 300px;
+  font-size: 18px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #D1D1D1;
+  border-radius: 8px;
+  padding:3px;
+}
+#forma select {
+  width: 400px;
+  padding: 2px 0px 3px 2px;
+  border: 1px solid #cecece;
+  background: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.span_al {
+font-size:9px;
+color: #CC1100;
+}
+.span_tip {
+font-size:9px;
+color: #33CC66;
+}
+
+input:required {
+border: 1px solid green;
+}
+
+input:invalid {
+border: 1px solid red;
+}
+select:required {
+border: 1px solid green;
+}
+
+select:invalid {
+border: 1px solid red;
+}
+#old_title{
+  font-style: italic;
+}
+.red{
+border: #f00 2px solid;
+}
+#everything{
+display:none;}
+.warning{
+color:red;
+}
+.small_text{
+  font-size:10px;
+}
+
+.apps_tbl  {
+    border: #C0C0C0 solid 1px;
+    border-collapse: collapse;
+}
+
+.apps_tbl tr {
+    height: 35px;
+}
+
+.apps_tbl tr:hover {
+    background-color: white;
+}
+
+.apps_tbl td {
+ text-align: center;
+ padding: 3px;
+}
+.apps_tbl th {
+ text-align: center;
+ padding: 6px;
+}
+.workout_green_div{
+  position:absolute;
+  height:25px;
+  background-color:#66CC00;
+  border: solid 1px;
+  border-right-color: transparent;
+  float:left;z-index:0;
+}
+
+.workout_red_div{
+  position:absolute;
+  height:25px;
+  background-color:#FF3300;
+  border: solid 1px;
+  border-right-color: transparent;
+  float:left;z-index:0;
+}
+
+.workout_outer_div{
+position:relative;
+width:100px;
+height:25px;
+z-index:1;
+left:0px;
+top:0px;
+border: solid 1px grey;
+font-size: 9px;
+vertical-align: middle;
+}
+
+.show_xtra_flds_span{
+font-size:20px;
+font-weight:bold;
+color:#66CC00;
+cursor:pointer;
+}
+
+.tarif_span{
+font-size: 20px;
+font-weight:bold;
+display:block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.workout_perc_text{
+font-size:10px;
+font-weight:bold;
+}
+
+.workout_td{
+width:100px;
+vertical-align: top;
+}
+
+.dat_ord{
+  font-size:9px;
+}
+
+.sm_text_td{
+  font-size:10px;
+}
+
+.btn_big{
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.lbl_chk{
+font-size:8px;
+cursor:pointer;
+vertical-align:middle;
+}
+
+.myorder{
+ background-color: #F0F0F0;
+
+}
+
+.orange_alert{
+color: orange;
+font-size: 13px;
+font-weight:bold;
+}
+
+.red_alert {
+color: red;
+font-size: 13px;
+font-weight:bold;
+}
+
+.green_alert {
+color: green;
+font-size: 13px;
+font-weight:bold;
+}
+
+.orange_alert_sm{
+color: orange;
+font-size: 10px;
+}
+
+.red_alert_sm {
+color: red;
+font-size: 10px;
+}
+
+.green_alert_sm {
+color: green;
+font-size: 10px;
+}
+
+.orange_alert_p{
+color: orange;
+font-size: 13px;
+font-weight:bold;
+cursor: pointer;
+}
+
+.red_alert_p {
+color: red;
+font-size: 13px;
+font-weight:bold;
+cursor: pointer;
+}
+
+.green_alert_p {
+color: green;
+font-size: 13px;
+font-weight:bold;
+cursor: pointer;
+}
+.black_alert_p{
+	color: black;
+font-size: 13px;
+font-weight:bold;
+}
+#new_comment{
+	padding: 5px;
+    margin-bottom: 5px;
+}
+.print_comment1{display:none;}
+@media print {
+	#new_comment{display:none;}
+	#spec_req{
+		display:none;
+	}
+	.print_comment1{display:block!important;
+    white-space: break-spaces;
+	border: 5px solid black;
+    padding: 5px;width:794px;line-height: 1;}
+	.print_comment{display:none!important;}
+	
+}
+/*popup_stamps*/
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  display:none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+      z-index: 100;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    color: rgb(51, 51, 51);
+    border-radius: 15px;
+    font-weight: 600;
+	width:480px;
+	height:300px;
+}
+.content-modal{font-size:14px;}
+.list_stamps{
+	width:100%;
+	height:240px;
+	overflow-y:auto;
+	    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+.list_stamps p{
+		    padding: 5px;
+    margin: 0px;
+	font-weight:100;
+}
+.list_stamps p:hover{
+	cursor:pointer;
+	background-color:#ffa;
+}
+p.select_stamps b {
+    width: 100px;
+    display: inline-block;
+}
+.select_stamps span {
+    width: 115px;
+    display: inline-block;
+}
+#list_stamps_in1,
+#list_stamps_in2,
+#list_stamps_in3{
+	font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+}
+.icon_btn{text-decoration:none;}
+.icon_btn_r21{
+	font-size:21px;
+	vertical-align: middle;
+}
+.icon_btn_r17{
+	font-size:17px;
+	vertical-align: middle;
+}
+.icon_btn_r12{
+	font-size:12px;
+	vertical-align: middle;
+}
+.icon_btn_blue{color:#29a9e0;}
+.icon_btn_blue:hover{color:#188abb;}
+.icon_btn_black{color:black;}
+.icon_btn_white{color:white;}
+.icon_btn_white:hover{
+	-webkit-box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 4px 22px 0px rgba(34, 60, 80, 0.2);
+}
+.icon_message_plus{
+	    --fa-secondary-color: gold;
+    --fa-secondary-opacity: 1.0;
+}
+/*доп цвета для производства*/
+.icon_file_info{
+	--fa-primary-color: #279ed9;
+	--fa-secondary-opacity: 1.0;
+	--fa-secondary-color: gray;
+}
+.icon_editbut{
+	--fa-primary-color: #747474;
+    --fa-secondary-color: gold;
+    --fa-secondary-opacity: 1.0;
+}
+.icon_setting{
+	--fa-primary-color: gray;
+    --fa-secondary-opacity: 1.0;
+    --fa-secondary-color: #279ed9;
+}
+.icon_planner{
+	--fa-primary-color: white;
+	--fa-secondary-opacity: 1.0;
+	--fa-secondary-color: gray;
+}
+.icon_color1{color:#048bfe;}
+@-moz-document url-prefix() {
+	/*т.к мозила криво отображает некоторые стили доп правила*/
+	#forma select{
+		padding:2px 0px 3px 10px;
+	}
+	#forma input[type="text"]{
+		padding:2px 0px 3px 10px;
+	}
+}
+.img_list_stamp{
+	    position: absolute;
+    top: 50%;
+    left: 70%;
+    margin: -125px 0 0 -125px;
+    width: 250px;
+    height: 250px;
+}
+.img_list_stamp img{width:250px;height:250px;}
+.filterType_select {
+    position: relative;
+}
+.filter {
+    width: 140px;
+    /*float: left;
+    margin: 0 10px 10px 0;*/
+}
+.filterType_select .filter__button {
+    font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.filterType_select .filter__button {
+    font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.filterType_select .filter__button_arrow {
+    position: absolute;
+    cursor: pointer;
+    right: 8px;
+    top: 7px;
+}
+.filterType_select .filter__button_reset {
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 5px;
+    display: none;
+    color: #d97373;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.clear:before, .clear:after {
+    content: '';
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+.filterType_select .filter__options {
+    display: none;
+    z-index: 92;
+    margin-top: 3px;
+    position: absolute;
+    box-shadow: 0px 1px 2px #aaa;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 0;
+    color: #757575;
+    font-size: 13px;
+    overflow-x: hidden;
+    max-height: 220px;
+    overflow-y: auto;
+}
+.filterType_select .filter__option, .filterType_select .filter__option_multi {
+    white-space: nowrap;
+    display: block;
+    min-width: 118px;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+.filterType_select .filter__option.active, .filterType_select .filter__option_multi.active {
+    color: #090;
+    background-color: #f0f0f0;
+    font-weight: 700;
+}

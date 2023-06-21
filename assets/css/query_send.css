@@ -1,0 +1,634 @@
+#queryPage {
+	width: 1100px;
+	margin: 10px auto 0;
+	font-size: 14px;
+}
+
+#queryPage input[type=text],
+#queryPage select,
+#queryPage textarea {
+	width: 100%;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+.pageFader {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #aaa;
+	opacity: 0.3;
+	z-index: 5000;
+	transition: all 0.5s;
+}
+
+.pageFader.active {
+	display: block;
+}
+
+/** ЗОНЫ **/
+.area {
+	margin: 0 0 20px 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.area#clientArea {
+	
+}
+
+.area#orderInfoArea {
+	
+}
+
+.area_header {
+	border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: 700;
+	margin: 0 0 5px;
+}
+
+.client_badge {
+	display: inline-block;
+    padding: 2px 4px;
+    font-size: 11px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #28a745;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.client_badge.new {
+	background-color: #dc3545;
+}
+
+.area_toolbar {
+	padding: 0 10px;
+	margin: 0 0 5px;
+	text-align: right;
+}
+
+.area_toolbar span.action {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.area_toolbar span.action:hover {
+	border: 1px solid #bfbbbb;
+}
+
+
+.area_content {
+	padding: 6px 10px;
+}
+
+/** БОКСЫ **/
+.row {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.inputBox {
+	/* margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #f7f7f7; */
+}
+
+.inputBox#inputBox_client_short {
+	float: left;
+	width: 300px;
+	margin: 0 20px 0 0;
+}
+
+.inputBox#inputBox_client_full {
+	float: left;
+	width: calc(100% - 320px);
+}
+
+.inputBox#inputBox_inn,
+.inputBox#inputBox_kpp,
+.inputBox#inputBox_rs,
+.inputBox#inputBox_bik {
+	float: left;
+	width: calc((100% - 60px) / 4);
+	margin: 0 20px 0 0;
+}
+.inputBox#inputBox_bik {margin: 0;}
+
+.inputBox#inputBox_phone,
+.inputBox#inputBox_email {
+	float: left;
+	width: calc((100% - 20px) / 2);
+	margin: 0 20px 0 0;
+}
+.inputBox#inputBox_email {margin: 0;}
+
+
+
+.inputBox#inputBox_orderType,
+.inputBox#inputBox_paymentType,
+.inputBox#inputBox_deliveryType,
+.inputBox#inputBox_contactPhone,
+.inputBox#inputBox_contactName {
+	float: left;
+	width: calc((100% - 80px) / 5);
+	margin: 0 20px 0 0;
+}
+
+.inputBox#inputBox_contactName {margin: 0;}
+
+
+
+
+.inputBox_label {
+	font-size: 13px;
+	margin: 0 0 5px;
+}
+
+.inputBox_content {}
+
+.inputBox_input {
+	position: relative;
+}
+
+.inputBox_input .loader {
+	display: none;
+	animation: spin 0.6s linear infinite;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    border: 3px solid #e0dbdb;
+    border-top: 3px solid #5078a0;
+    border-radius: 50%;
+	z-index: 5001;
+}
+
+.inputBox_input input[type=text],
+.inputBox_input textarea,
+.inputBox_input select {
+	width: 100%;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px
+}
+
+.inputBox_input select {
+	outline: none;
+	cursor: pointer;
+	padding: 6px 8px;
+}
+
+.inputBox.loading .inputBox_input input[type=text] {
+	padding: 7px 28px 7px 8px;
+}
+.inputBox.loading .inputBox_input .loader {
+	display: block;
+}
+
+.inputBox_inputs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag {
+	position: relative;
+	/* width: 170px; */
+	width: calc((100% - 10px) / 3);
+    margin: 0 5px 5px 0;
+}
+
+.tag:nth-child(3n) {
+	margin: 0 0 5px 0;
+}
+
+.tag input[type=text] {
+	padding: 7px 28px 7px 8px;
+}
+
+.tag__input {
+	position: relative;
+}
+
+.tag__remove {
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #757575;
+	cursor: pointer;
+	font-size: 11px;
+	border-radius: 3px;
+}
+
+.tag__remove:hover {
+	background-color: #f3f3f3;
+}
+
+.tag__tools {
+	font-size: 11px;
+}
+
+.tag__add {
+	border-radius: 3px;
+    width: 24px;
+    text-align: center;
+    color: #757575;
+    height: 24px;
+    position: relative;
+    top: 4px;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.tag__add:hover {
+	background-color: #f3f3f3;
+}
+
+.inputBox_toolbar {
+	text-align: right;
+}
+
+.inputBox_toolbar span.action {
+	cursor: pointer;
+    border-bottom: 1px dashed #333;
+    margin: 0 0 0 0;
+    font-size: 11px;
+}
+
+.inputBox_toolbar span.action:hover {
+	border-bottom-color: transparent !important;
+}
+
+.inputBox_toolbar span.action.action-yandex-search {
+	margin-left: 5px;
+	color: #999;
+	border-bottom-color: #999
+}
+
+.inputBox_toolbar span.action.action-double {
+	color: #f00;
+	border-bottom-color: #f00;
+}
+
+#inputBox_client_short input[type=text] {
+	position: relative;
+	z-index: 5001;
+}
+
+/** clientsListBox **/
+#clientsListBox {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: calc(100% + 10px);
+	z-index: 5001;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 600px;
+}
+
+#clientsListBox:before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	transform: rotate(45deg);
+	left: 40px;
+	top: -9px;
+	background-color: #fff;
+}
+
+.clientsList_items {
+	padding: 10px;
+	font-size: 13px;
+}
+
+.clientList_item {
+	padding: 0 0 10px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+.clientList_item:last-child {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.clientList_item_name {
+	margin: 0 0 5px;
+}
+.clientList_item_name .short {
+	font-weight: 700;
+	border-bottom: 1px dashed #333;
+    cursor: pointer;
+}
+.clientList_item_name .short:hover {
+	border-color: transparent;
+}
+.clientList_item_name .short span {
+	background-color: #ff0;
+}
+.clientList_item_address {
+	font-size: 11px;
+    color: #999;
+	margin: 0 0 5px;
+}
+.clientList_item_phones {
+	font-size: 11px;
+    color: #999;
+	margin: 0 0 5px;
+}
+.clientList_item_phones span {
+	border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 2px;
+    display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	line-height: 1;
+}
+.clientList_item_phones span:last-child {
+	margin: 0;
+}
+.clientList_item_orders {
+	font-size: 12px;
+}
+.clientList_item_orders .last span,
+.clientList_item_orders .count span {
+	font-weight: 700;
+}
+.clientList_item_data {display: none;}
+
+
+/* Списки товаров */
+.toolbar {
+	display: flex;
+}
+.toolbar .btn {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+	margin: 0 5px 0 0;
+}
+.toolbar .btn:hover {
+	border: 1px solid #bfbbbb;
+}
+.toolbar .btn i {
+	font-size: 11px;
+}
+
+.listTable thead td {
+	font-weight: 400;
+	padding: 5px;
+	text-align: center;
+	font-size: 13px;
+	border-bottom: 2px solid #eee;
+}
+
+.listTable tbody td {
+	padding: 5px;
+	font-size: 12px;
+	border-bottom: 1px solid #eee;
+}
+
+.listTable input[type=text],
+.listTable select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+	outline: none;
+}
+
+.col-nr {width: 20px;}
+.col-podr {width: 175px;}
+.col-article {width: 65px; display: none;}
+.col-info {width: 100px; display: none;}
+.col-sys {}
+.col-count {width: 50px;}
+.col-price {width: 80px;}
+.col-sum {width: 100px;}
+.col-actions {width: 56px;}
+
+.itemsWithArticle .col-article {display: table-cell;}
+.itemsWithArticle .col-info {display: table-cell;}
+
+.col-price span.discountPrice {
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	color: #2bd800;
+}
+
+/* Действия */
+.col-actions > div {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.col-actions .btn-action {
+	position: relative;
+	margin: 0 5px 0 0;
+}
+.col-actions .btn-action:last-child {margin: 0;}
+
+/* Кнопка удаления */
+.col-actions .actionRemoveItem {
+	display: block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 11px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 26px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.col-actions .actionRemoveItem:hover {
+	color: #d97373;
+    border-color: #d97373;
+}
+
+/* Кнопка добавления апгрейда */
+.col-actions .actionAddUpgrade {}
+.col-actions .actionAddUpgrade .action-trigger {
+	display: block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 11px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 26px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.col-actions .actionAddUpgrade .action-trigger:hover,
+.col-actions .actionAddUpgrade.opened .action-trigger {
+	color: #52bf50;
+    border-color: #52bf50;
+}
+
+.col-actions .actionAddUpgrade .dropdown {
+	display: none;
+	position: absolute;
+	margin-top: 3px;
+    position: absolute;
+    box-shadow: 0px 1px 2px #aaa;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 0;
+    color: #757575;
+    font-size: 13px;
+    overflow-x: hidden;
+    max-height: 220px;
+    overflow-y: auto;
+	z-index: 200;
+	right: 0;
+}
+.col-actions .actionAddUpgrade.opened .dropdown {display: block;}
+
+.col-actions .actionAddUpgrade .dropdown > div {
+    white-space: nowrap;
+    min-width: 118px;
+    padding: 5px 10px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+.col-actions .actionAddUpgrade .dropdown > div:hover {background-color: #f3f3f3;}
+
+/* Стили по типам строк */
+.sub-entry .col-nr span i {
+	font-size: 18px;
+	transform: rotate(90deg);
+	color: #ddd;
+}
+
+.sub-entry .col-sys .upgrade {text-align: right;}
+.sub-entry .col-sys .upgrade i {
+	font-size: 15px;
+	color: #666;
+	margin: 0 5px 0 0;
+}
+
+.entry-delivery {} 
+.entry-delivery .col-sys > div {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.entry-delivery .col-sys select {
+	width: auto !important;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+}
+
+
+/* Итого под таблицей */
+.summary {
+	float: right;
+    margin: 10px 38px 0 0;
+	display: flex;
+}
+
+.summary .label {
+	font-size: 13px;
+	padding: 5px;
+	text-align: center;
+	border-bottom: 2px solid #eee;
+}
+
+.summary .value {
+	padding: 5px;
+}
+
+.summary_discount {
+	width: 80px;
+}
+
+.summary_discount .value {
+	position: relative;
+}
+
+.summary_discount .value:after {
+	content: '%';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    right: 10px;
+    color: #666;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.summary_discount input[type=text] {
+	padding-right: 25px !important;
+}
+
+.summary_sum {
+	width: 100px;
+}
+
+.summary_sum .value {
+	text-align: center;
+	padding: 12px 5px
+}
+
+
+
+
+

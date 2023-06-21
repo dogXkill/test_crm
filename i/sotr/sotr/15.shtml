@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="../i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="../i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="../i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3><center><img src="../i/sotr/ali.jpg" alt="" width="521" height="391" border="0">
+</center><br>
+<font face=tahoma>
+<strong>Имя: </strong>Хаммадулин Али Адкамович<br>
+<strong>Должность: </strong>курьер<br>
+<strong>ДР:</strong> 02 сентября 1990<br>
+<strong>Электропочта:</strong>  нет<br>
+<strong>Работает с:</strong> 02 августа 2006<br>
+<strong>Телефоны:</strong> 8 916 645 2514<br>
+<strong>Что закончил: </strong>пока ничего<br>
+<strong>Семейное положение:</strong> холост<br>
+<strong>Служебная характеристика:</strong> тинэйджер в нашем офисе, исполнителен. Сказать больше нечего.</font>
+<center><a href="14.shtml"><font face=tahoma><strong><<<</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="../"><font face=tahoma><strong>на главную</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="16.shtml"><font face=tahoma><strong>>>></strong></strong></font></a></center>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>

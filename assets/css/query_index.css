@@ -1,0 +1,846 @@
+body {
+	height: 100%;
+	position: relative;
+}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+.clear {}
+.clear:before,
+.clear:after {
+	content: '';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+
+#queryList {
+	border-collapse: collapse;
+}
+
+#queryList thead td {
+	font-weight: 700;
+	padding: 5px;
+	text-align: center;
+	font-size: 14px;
+	border-bottom: 2px solid #eee;
+	/* border-left: 1px solid #eee; */
+	/* border-right: 1px solid #eee; */
+}
+
+#queryList .col-order { width: 28px; }
+#queryList .col-client {  }
+#queryList .col-manager { width: 90px; }
+#queryList .col-orderType { width: 180px; }
+#queryList .col-delivery { width: 70px; }
+#queryList .col-paymentType { width: 115px; }
+#queryList .col-date { width: 100px; }
+#queryList .col-amount { width: 80px; }
+#queryList .col-payments { width: 80px; }
+#queryList .col-debt { width: 70px; }
+#queryList .col-accNumber { width: 95px; }
+#queryList .col-managerPoints { width: 50px; }
+#queryList .col-actions { width: 110px; }
+
+#queryList tbody td {
+	padding: 5px;
+	font-size: 12px;
+	border-bottom: 1px solid #eee;
+	/* border-left: 1px solid #eee; */
+	/* border-right: 1px solid #eee; */
+}
+
+#queryList tbody .col-date {
+	font-size: 12px;
+}
+
+#queryList tbody .col-order div {
+	width: 28px;
+	height: 28px;
+	background-image: url('data:image/gif;base64,R0lGODlhHAAcAPfZAPz//3aVurfW//v+//f7/rzb/7va/73c/////7vc//r9/vL3+wCVM/7//7nY/77d//f7/fn9/rjX//v///j8/vv+/vf6/vj7/nSf0wClWLna//X6/fP4/Pb6/ezy+ery+PH2+7fY/1SKye70+QCfRP3+/16QzOfv+P7+/n2av7/I0Zy+v9Xi2AClV3mWuQCePX+cwQCIP2OUzury+dTZ3n+cwPr+/gCoa3GYwbfCzHKLqgClWLvT8JnAv1+PxkpujOjw+VKSUbzS6qjDn67HpPT5/LfK4cXN0wCGJU93n8HK0WSQxHmPpF2NxYOjxHugn3Wf0q3I6GaVzoqlwGiRw7jT2bS/ycnQ1jufXKO/5rC7xu70+gCgRvj7/wCrWYeSobvX52+hkefw+F2QzFR4n115lACXNgCjTb3GzwCpWSqIRIShvTx8w/b6/m6dkbXAylmOyk52oH2cwOfw+cPVu2KSzbfN5ACfRGmX0ACUP+ns7YSrrAC1bcLh/2KSzgCfRYelv6Wxu/j7/QCnWevz+QCMNgCOOFBxkQChSX6dulx/oq24wsTM0gCRLwCZNwCaLoa1mN/v/3aSsPz9/2GUzWuVwv39/QCjR/n8/nSWtbG9x9Ti8nmbv8nh6fr9/1aMygCnV8Hg/7/Y1wCoSlKIyOLs9muGp1d7oY6sxmqY0L/e/666xXaStpCu1OPu+FGhhejr7Ze8wJKrw22cjWCTzfn8/wCuZfD3+3WRsYOvoLvEzVuPy3WZwPX5/GyVwnyev7bX/wCIN1mNyrzd/8TWvE6GyFmOy1+RzFmpkACWNXuXvP7+/1illVCIyLzHz1GJyGSSgX+m1leNymGPxIGexmyZ0M/W3H+fv8PL0////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANkALAAAAAAcABwAAAj/ALMJHEiwoMGDAgMoXMhwIRNYCAsG6JOgQIEEGA9oDJUliiw9EQcGKCAgQA05MFIoc8EKlykdksp8CZltZMlhEnKGCOGgpwNVragFQhHRptGGSBUiNGqgZIMJUAFIBdCgAYIARgIgMMi05NSvXwNEshOAKMEACUo2DSC1VzMIYAEEEMLDSQBLZw+o9QqAVDEOcQMASpTpx5W8JTXwHSFiQdxJA2o1QMUIcQDFbAEsEAYiLoHPXabQsLxWKmMPFVLHBbDG2tkHezN/erYLRJ0xt+JeO/I6ttQBNhR0WHBCRgSwv7D1DrAWgXMEAAZAOFGNAlhOSpYXCCLK04ULBABg55oBRYwCsLxUCKRD7EmPWHtWYLkBacNnAIQobZoTQQGF4wDggIZAhoCyww4t7DCILXykgUwnFgxAiwl4RCMIBhhI4VglugiUxyV3/HHHHVwgcoYXo8QABgAKQLBBBy1+UIofA/iSg0BImMHAjjsm48gLjTDjymocpPLBAFS8IRARQ0AThhuz5FLII8FUYUEbcQ1AgQcmDLCEFWctVIAar7CwTAklgDXAAlsAYcwA02hyEFrABPDZfV8NcIw0cBQBQBNazLnQalMNYKhUPqwSUmaEgsXGIosmtZAip5CRRByHOEPTpgcFBAA7');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#queryList tbody tr:hover td,
+#queryList tbody tr.pointed td {
+	background-color: #bdcdff;
+}
+#queryList tbody tr.deleted td {
+	background-color: #d97373;
+}
+
+.editPaymentsOpenButton {
+	cursor: pointer;
+	font-weight: 700;
+	color: #090;
+	font-size: 11px;
+}
+
+
+
+
+/** Ячейка "Номер счета" **/
+#queryList tbody td.col-accNumber {
+	position: relative;
+}
+
+#queryList tbody td.col-accNumber input[type=text] {
+	width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+#queryList tbody td.col-accNumber span {
+	display: none;
+	position: absolute;
+    font-size: 24px;
+    top: 50%;
+    margin-top: -15px;
+    right: 10px;
+    color: #090;
+    line-height: 30px;
+    height: 30px;
+}
+
+#queryList tbody td.col-accNumber.load span {
+	display: block;
+}
+
+/* #queryList tbody td.col-accNumber input[type=text].error {
+	border: 1px solid #d97373;
+	color: #333;
+	font-weight: normal;
+}
+
+#queryList tbody td.col-accNumber input[type=text].success {
+	border: 1px solid #090;
+} */
+
+/* a.actionIcon:link, a.actionIcon:visited {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 40px;
+}
+
+a.actionIcon:hover, a.actionIcon:active {
+	border: 1px solid #090;
+    color: #090;
+} */
+
+div.actionApp {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 40px;
+	position: relative;
+}
+div.actionApp a {
+	position: absolute;
+	height: 100%;
+	top: 1px;
+	opacity: 0.5;
+}
+div.actionApp a:hover {
+	opacity: 1;
+}
+
+div.actionApp a.view {
+	display: none;
+	left: 0;
+	width: 50%;
+}
+div.actionApp a.add {
+	display: none;
+	right: 0;
+	width: 50%;
+}
+div.actionApp.noapp a.add {
+	width: 100%;
+}
+
+div.actionApp:hover a.view {
+	display: block;
+}
+div.actionApp.noapp:hover a.view {
+	display: none;
+}
+
+div.actionApp:hover a.add {
+	display: block;
+}
+
+div.actionApp:hover span {
+	opacity: 0;
+}
+
+/* a.actionIcon:link, a.actionIcon:visited {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 40px;
+}
+
+a.actionIcon:hover, a.actionIcon:active {
+	border: 1px solid #090;
+    color: #090;
+} */
+
+a.actionDelivery {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 26px;
+	color: #aaa;
+}
+a.actionDelivery.active {
+	color: #000033;
+}
+
+span.actionDelete {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #fcfcfd;
+    width: 26px;
+	color: #aaa;
+	cursor: pointer;
+}
+
+span.actionDelete.process,
+span.actionDelete:hover {
+	color: #d97373;
+	border-color: #d97373;
+}
+
+span.actionDelete i.fa-cog {
+	display: none;
+}
+span.actionDelete.process i.fa-cog {
+	display: inline-block;
+}
+span.actionDelete.process i.fa-trash-o {
+	display: none;
+}
+
+
+
+
+/** FILTERS **/
+#filters {
+	width: 1100px;
+	margin: 20px auto;
+}
+
+.filter {
+	width: 140px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+#filter_orderType.filter { width: 130px; }
+#filter_deliveryType.filter { width: 120px; }
+#filter_debt.filter { width: 90px; }
+
+.filter:last-child {
+	margin-right: 0;
+}
+
+.filter input,
+.filter select {
+	box-sizing: border-box;
+}
+.filterType_input {
+	/* width: 280px; */
+}
+.filter_input .textInput {
+	width: 100%;
+	border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+/*фильтр периода*/
+.filterType_period { width: 280px; }
+.filterType_period .filter_input {
+	font-size: 13px;
+	border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 2px 8px;
+	color: #757575;
+	width: 100%;
+	box-sizing: border-box;
+}
+.filterType_period.active .filter_input {
+	color: #090;
+	border-color: #090;
+}
+.filterType_period .periodRange {
+	display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+	color: #757575;
+    position: relative;
+}
+.filterType_period .periodRange.active {
+	color: #090;
+}
+.filterType_period .periodRange:hover {
+	background-color: #f3f3f3;
+}
+.filterType_period .periodRange input[type=text] {
+	background: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 15px 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #757575;
+	cursor: pointer;
+}
+.filterType_period .periodRange.active input[type=text] {
+	color: #090;
+}
+.filterType_period .periodRange_arrow {
+	font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+/*фильтры селекты*/
+.filterType_select {
+	position: relative;
+}
+.filterType_select .filter__button {
+	font-size: 13px;
+	border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+	color: #757575;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+.filterType_select.active .filter__button {
+	color: #090;
+	border-color: #090;
+}
+.filterType_select .filter__button_arrow {
+	position: absolute;
+	cursor: pointer;
+	right: 8px;
+    top: 7px;
+}
+.filterType_select.active .filter__button_arrow {
+	display: none;
+}
+.filterType_select .filter__button_reset {
+	position: absolute;
+	cursor: pointer;
+	right: 5px;
+    top: 5px;
+	display: none;
+	color: #d97373;
+	height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.filterType_select.active .filter__button_reset {
+	display: block;
+}
+.filterType_select .filter__button_reset:hover {
+	background-color: #f0f0f0;
+	color: #d97373;
+}
+
+.filterType_select .filter__options {
+	display: none;
+	z-index: 92;
+    margin-top: 3px;
+    position: absolute;
+    box-shadow: 0px 1px 2px #aaa;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 0;
+    color: #757575;
+    font-size: 13px;
+	overflow-x: hidden;
+	max-height: 220px;
+	overflow-y: auto;
+}
+.filterType_select.opened .filter__options {
+	display: block;
+}
+.filterType_select .filter__option {
+	white-space: nowrap;
+	display: block;
+	min-width: 118px;
+    padding: 10px;
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+}
+.filterType_select .filter__option:hover {
+	background-color: #f3f3f3;
+}
+.filterType_select .filter__option.active {
+	color: #090;
+    background-color: #f0f0f0;
+    font-weight: 700;
+}
+
+.specialFilter {
+	width: 140px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.specialFilter .filter__button {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.specialFilter.active .filter__button {
+	color: #090;
+    border-color: #090;
+}
+
+.specialFilter .filter__button_ico {
+	position: absolute;
+    cursor: pointer;
+    right: 8px;
+    top: 7px;
+}
+
+/** Сортировка **/
+.sortFilter {}
+.sortFilter i {
+	display: none;
+	margin: 0 0 0 5px;
+	color: #090;
+}
+.sortFilter span {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.sortFilter.active,
+.sortFilter span:hover {
+	color: #090;
+}
+.sortFilter.active:not(.desc) i.fa-sort-amount-asc {
+	display: inline-block;
+}
+.sortFilter.active.desc i.fa-sort-amount-desc {
+	display: inline-block;
+}
+
+/*perPage_selector*/
+#perPage_selector {
+	float: right;
+	width: 60px;
+}
+.perPage_selector__button {
+	font-size: 13px;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+    color: #757575;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.perPage_selector__button_arrow {
+	float: right;
+}
+.perPage_selector__options {
+	display: none;
+    z-index: 92;
+    margin-top: 3px;
+    position: absolute;
+    box-shadow: 0px 1px 2px #aaa;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 0;
+    color: #757575;
+    font-size: 13px;
+    overflow: hidden;
+}
+#perPage_selector.opened .perPage_selector__options {
+	display: block;
+}
+.perPage_selector__option {
+	white-space: nowrap;
+    display: block;
+    min-width: 38px;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+	text-align: center;
+}
+.perPage_selector__option:hover {
+	background-color: #f3f3f3;
+}
+.perPage_selector__option.active {
+	background-color: #f0f0f0;
+	font-weight: 700;
+}
+
+.topPagination {}
+.topPagination .paginationLinks {
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 2px 0;
+}
+.bottomPagination .paginationLinks {
+	width: 1100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.paginationLinks > a:link, .paginationLinks > a:visited {
+	display: inline-block;
+    border: 1px solid #dfdbdb;
+    text-decoration: none;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+	border-radius: 3px;
+	color: #757575;
+}
+.paginationLinks > a:hover, .paginationLinks > a:active {
+	border: 1px solid #090;
+	color: #090;
+}
+
+.paginationLinks > span.separator {
+	display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.paginationLinks > span.current {
+	display: inline-block;
+	border: 1px solid #090;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+	border-radius: 3px;
+	color: #090;
+}
+
+
+
+/** TOOLTIPS **/
+#queryList tbody .col-order .itemsTooltip {
+	display: none;
+}
+
+.ui-tooltip.paketoffTooltip {
+	max-width: none;
+	padding: 0;
+}
+
+.ui-widget-content.paketoffTooltip {
+	border: none;
+}
+
+/** Items tooltips **/
+.paketoffTooltip .itemsTooltip h6 {
+	margin: 0;
+	text-align: center;
+	background: rgb(155, 200, 255);
+    padding: 3px;
+}
+
+.paketoffTooltip .itemsTooltip div.list {
+	padding: 5px;
+}
+
+.paketoffTooltip .itemsTooltip div.list > div {
+	font-size: 11px;
+    color: #999;
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+/** Datetime tooltip **/
+.paketoffTooltip  .titleTooltip {
+	border: 1px solid #9bc8ff;
+	padding: 5px;
+	font-size: 11px;
+}
+
+
+/** DIALOGS **/
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.ui-widget-overlay {
+	opacity: 0.3;
+}
+
+.paketoffDialog {
+	position: relative;
+}
+
+.dialogLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 250, 250, 0.8);
+    /* display: none; */
+    z-index: 10;
+}
+
+.dialogLoader div {
+	border: 4px solid #e0dbdb;
+    border-top: 4px solid #5078a0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.6s linear infinite;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 11;
+}
+
+#editPaymentsDialog .dialogContent {
+	display: none;
+}
+
+#editPaymentsDialog {
+	display: none;
+}
+
+.paymentsEditForm {}
+
+.paymentsEditForm td {
+	padding: 5px;
+}
+.paymentsEditForm thead td {
+	font-size: 12px;
+    font-weight: 700;
+}
+
+.paymentsEditForm input[type=text] {
+	width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfdbdb;
+    background-color: #fcfcfd;
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+.paymentsEditForm input[type=text].error {
+	border: 1px solid #d97373;
+	color: #333;
+	font-weight: normal;
+}
+
+.paymentsEditForm input[type=text]:disabled {
+	background-color: #eee;
+}
+
+.paymentsEditForm .col-summ {
+	width: 100px;
+}
+.paymentsEditForm .col-date {
+	width: 100px;
+}
+.paymentsEditForm .col-number {
+	width: 150px;
+}
+.paymentsEditForm .col-action {
+	width: 50px;
+}
+.paymentsEditForm  .col-head {
+	font-size: 11px;
+}
+.paymentsEditForm  .col-head span {
+	cursor: pointer;
+	border-bottom: 1px dashed #333;
+	margin: 0 5px 0 0;
+}
+.paymentsEditForm  .col-head span:hover {
+	border-bottom: none;
+}
+
+.paymentsEditForm  .col-action i {
+	font-size: 19px;
+    color: #aaa;
+    margin: 0 3px;
+}
+.paymentsEditForm  .col-action i.fa-floppy-o.disabled {
+	color: #eee;
+}
+.paymentsEditForm  .col-action i.fa-floppy-o:not(.disabled):hover,
+.paymentsEditForm  .col-action i.fa-floppy-o.active,
+.paymentsEditForm  .col-action i.fa-plus:hover,
+.paymentsEditForm  .col-action i.fa-plus.active {
+	cursor: pointer;
+    color: #6eb46e;
+}
+
+.paymentsEditForm  .col-action i.fa-trash-o:hover,
+.paymentsEditForm  .col-action i.fa-trash-o.active {
+    color: #d97373;
+	cursor: pointer;
+}
+
+/* блок "нет платежей" */
+.paymentsEditForm tfoot .no-payments-row {
+	display: none;
+}
+.paymentsEditForm  .no-payments-row  td {
+	font-size: 12px;
+	font-weight: 700;
+	color: #d97373;
+}
+
+/* блок "ошибки" */
+.paymentsEditForm tfoot .errors-row.temp {
+	display: none;
+}
+.paymentsEditForm  .errors-row  td {
+	font-size: 12px;
+	color: #d97373;
+}
+
+/* блок "платеж обновлен" */
+.paymentsEditForm tfoot .success-row.temp {
+	display: none;
+}
+.paymentsEditForm  .success-row  td {
+	font-size: 12px;
+	color: #6eb46e;
+}
+
+/* аякс и все что с ним связано */
+#listBox {
+	position: relative;
+}
+
+#listBox > .loader {
+	width: 150px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+.loader-bar {
+	display: inline-block;
+    width: 4px;
+    height: 20px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+    background-color: #090;
+    margin: 20px 2px 0;
+}
+
+.loader-bar:nth-child(1) { animation-delay: 0; }
+.loader-bar:nth-child(2) { animation-delay: .15s; } 
+.loader-bar:nth-child(3) { animation-delay: .30s; }
+.loader-bar:nth-child(4) { animation-delay: .45s; }
+.loader-bar:nth-child(5) { animation-delay: .60s; }
+
+@keyframes loading {
+	0% { transform: scale(1); }
+	20% { transform: scale(1, 2.5); }
+	40% { transform: scale(1); }
+}
+
+#notificationBox {
+	position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+}
+
+.notificationItem {
+	background-color: #6eb46e;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+	font-size: 12px;
+	display: none;
+	margin: 0 0 5px;
+}
+.notificationItem:last-child {
+	margin: 0;
+}

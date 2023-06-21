@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Printfolio intranet v.1</title>
+</head>
+
+<body>
+<table align=center width=750 border=0>
+
+<tr>
+<td align=center><a href="http://printfolio.ru" target=_blank><img src="../i/pf.gif" alt="" width="270" height="62" border="0"></a></td>
+<td align=center><a href="http://comcad.ru" target=_blank><img src="../i/cm.gif" alt="" width="180" height="51" border="0"></a></td>
+<td align=center><a href="http://wbox.ru" target=_blank><img src="../i/wbox.jpg" alt="" width="131" height="50" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan=3><center>
+<img src="../i/sotr/ded.jpg" alt="" width="600" height="400" border="0"></center><br>
+<font face=tahoma>
+<strong>Имя: </strong>Хромов Анатолий Сергеевич<br>
+<strong>Должность: </strong>генеральный директор<br>
+<strong>ДР:</strong> 04 ноября 2006 года<br>
+<strong>Электропочта:</strong> а что это такое ? сам ты емейл!<br>
+<strong>Работает с:</strong> с самого появления<br>
+<strong>Телефоны:</strong> 566 1102<br>
+<strong>Что закончил: </strong>не помнит<br>
+<strong>Семейное положение:</strong> мужа нет, жены нет, детей полно, внуки тоже имеются<br>
+<strong>Служебная характеристика:</strong> Любитель женщин. На работе появляется редко, но когда появляется, не стоит его спрашивать про оплаты и цветопробы. 
+</font>
+<center><a href="4.shtml"><font face=tahoma><strong><<<</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="../"><font face=tahoma><strong>на главную</strong></font></a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="6.shtml"><font face=tahoma><strong>>>></strong></strong></font></a></center>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>
